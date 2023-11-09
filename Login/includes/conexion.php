@@ -2,8 +2,8 @@
 
 $server = 'localhost:3306';
 $username = 'root';
-$password = '117092';
-$database = 'coiners_drift';
+$password = '';
+$database = 'coiner_drift';
 
 $db = mysqli_connect($server, $username, $password, $database);
 

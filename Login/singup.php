@@ -45,18 +45,20 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
         <p id="s-exito"> <?= $mensaje ?> </p> <!-- Necesario usar la forma de <.?.= para mostrar el contenido de una variable -->
     <?php endif; ?>
 
-    <h1>SingUp</h1>
-    <span>or <a href="login.php">Login</a></span>
+    <div class="tarjeta">
+        <h1>SingUp</h1>
+        <span>or <a href="login.php">Login</a></span>   
 
-    <form id="registro" action="singup.php" method="POST">
-        <label for="name" id="login-nombre">Nombre</label>
-        <input type="text" name="name" id="i-nombre" placeholder="Introduce un nombre">
-        <label for="email" id="login-email">Email</label>
-        <input type="email" name="email" id="i-email" placeholder="Introduce tu email">
-        <label for="password" id="login-pass">Contraseña</label>
-        <input type="password" name="password" id="i-pass" placeholder="Introduce tu contraseña">
+        <form id="registro" action="singup.php" method="POST">
+            <label for="name" id="login-nombre">Nombre</label>
+            <input type="text" name="name" id="i-nombre" placeholder="Introduce un nombre">
+            <label for="email" id="login-email">Email</label>
+            <input type="email" name="email" id="i-email" placeholder="Introduce tu email">
+            <label for="password" id="login-pass">Contraseña</label>
+            <input type="password" name="password" id="i-pass" placeholder="Introduce tu contraseña">
 
-        <input type="submit" id="singup" value="Entrar!"> 
-    </form>
+            <input type="submit" id="singup" value="Entrar!"> 
+        </form>
+    </div>
 
     <?php require_once 'includes/footer.php' ?>

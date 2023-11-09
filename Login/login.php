@@ -49,16 +49,18 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
         <p id="error"> <?= $mensaje ?> </p>
     <?php endif; ?>
 
-    <h1>Login</h1>
-    <span>or <a href="singup.php">SingUp</a></span>
+    <div class="tarjeta">
+      <h1>Login</h1>
+        <span>or <a href="singup.php">SingUp</a></span>
 
-    <form id="login" action="login.php" method="POST">
-        <label for="email" id="id_email">Email</label>
-        <input type="email" name="email" placeholder="Introduce tu email">
-        <label for="password" id="id_pass">Contraseña</label>
-        <input type="password" name="password" placeholder="Introduce tu contraseña">
+        <form id="login" action="login.php" method="POST">
+            <label for="email" id="id_email">Email</label>
+            <input type="email" name="email" placeholder="Introduce tu email">
+            <label for="password" id="id_pass">Contraseña</label>
+            <input type="password" name="password" placeholder="Introduce tu contraseña">
 
-        <input type="submit" id="enviar" value="Entrar!">    
-    </form>
+            <input type="submit" id="enviar" value="Entrar!">    
+        </form>
+    </div>
     
     <?php require_once 'includes/footer.php' ?>

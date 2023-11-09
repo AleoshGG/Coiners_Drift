@@ -2,18 +2,27 @@
     margin: 0px auto;
     padding: 0px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Amaranth', sans-serif;
 }
-
+body{
+    background-color: #303030;
+    display: block;
+    justify-content: center;
+}
 /* HEADER */
 header{
-    width: 100%;
-    height: 50px;
+    width: 20%;
+    height: 10%;
     line-height: 50px;
-    background-color: #333;
+    border-radius: 20em;
+    background-color: #505050;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 5% 40%;
+    margin-bottom: 2%;
     transition: all 300ms;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+    font-weight: bold;
 }
 
 header a{
@@ -24,8 +33,21 @@ header a{
 }
 
 header:hover{
-    background-color: rgb(104, 143, 104);
-    box-shadow: 0px 0px 4px green inset;
+    background-color: #303030;
+    box-shadow: 0px 0px 4px #505050 inset;
+    border: solid 2px #f38032;
+    box-sizing: border-box;
+}
+.tarjeta{
+    position: relative;
+    width: 30%;
+    background-color: #505050;
+    border-radius: 55px;
+    padding: 3%;
+    box-sizing: content-box;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* FOOTER */
@@ -37,56 +59,97 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #303030;
     color: white;
 }
 
 h1{
-    margin-bottom: 30px;
+    margin: 5% 0%;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: xx-large;
 }
 
 /* ENLACES LOGIN Y REGISTRARSE */ 
 
 #enlaces{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin: 10% 0%;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    left: 35%;
+    box-sizing: border-box;
 }
 
-#enlaces a{
-    width: 50%;
+#enlaces{
+    width: 40%;
+    left: 30%;
+    height: 20%;
     font-size: 20px;
-    text-decoration: none;
-    background-color: #eee;
-    color: black;
-    padding: 15px;
-    transition: all 300ms;
-    box-shadow: 0px 0px 4px gray;
+    display: flex;
+    justify-content: center;
 }
-
-#enlaces a:hover{
+#btninicio {
+    text-decoration: none;
+    background-color: #303030;
+    color: #fff;
+    padding: 15px;
+    margin-right: 10%;
+    transition: all 300ms;
+    border-radius: 50px;
+    width: auto;
+    box-sizing: border-box;
+}
+#btninicio:hover{
     background-color: #333;
     color: white;
-    box-shadow: 0px 0px 5px green inset;
+    border: solid 2px #f38032;
+    transition: 0.3s;
 }
-
+#btnregsitro{
+    width: auto;
+    height: 20%;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #f38032;
+    color: #fff;
+    padding: 15px;
+    transition: all 300ms;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+#btnregsitro:hover{
+    background-color: #f38032;
+    color: white;
+    border: solid 2px #303030;
+    box-shadow: 0px 0px 7px #303030 inset;
+    transition: 0.3s;
+    box-sizing: content-box;
+}
 /* LOGIN */
 
 span{
     font-size: 20px;
+    color: white;
+    margin: 0%;
 }
 
 span a{
     text-decoration: none;
     transition: all 300ms;
+    text-decoration: underline #fff;
+    color: #fff;
 }
 
 span a:hover{
-    color: black;
+    color: #f38032;
     text-decoration: underline;
 }
 
 #login{
     display: grid;
+    justify-content: center;
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -99,8 +162,19 @@ span a:hover{
 }
 
 #login label{
-    width: 30%;
+    width: auto;
     font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+#login input{
+    width: auto;
+    height: auto;
+    color: #303030;
+    font-family: 'Amaranth', sans-serif;
+    border-radius: 10em;
+    border: none;
 }
 
 #id_email{
@@ -112,31 +186,27 @@ span a:hover{
     grid-area: label-pass;
 }
 
-input[type="email"]{
-    width: 70%;
-    grid-area: email;
+#enviar{
+    position: relative;
+    margin-top: 5%;
+    padding: 5% 8%;
+    width: 100%;
+    left: 50%;
+    font-size: large;
+    color: #fff;
 }
+#enviar:hover{
+    border: solid 2px #f38032;
+    position: relative;
+    margin-top: 5%;
+    padding: 5% 8%;
+    width: 80%;
+    left: 50%;
+    font-size: large;
+    box-sizing: border-box;
 
-input[type="password"]{
-    width: 70%;
-    grid-area: pass;
+    transition: 0.5s;
 }
-
-input[type="submit"]{
-    width: 25%;
-    grid-area: submit;
-    cursor: pointer;
-    font-size: 15px;
-    transition: all 300ms;
-    border: none;
-}
-
-input[type="submit"]:hover{
-    background-color: #333;
-    color: white;
-    box-shadow: 0px 0px 4px green inset;
-}
-
 /* REGISTRO */
 
 #registro{
@@ -155,6 +225,18 @@ input[type="submit"]:hover{
 #registro label{
     width: 30%;
     padding: 9px;
+    color: #fff;
+}
+#registro input{
+    width: auto;
+    height: auto;
+    color: #303030;
+    font-family: 'Amaranth', sans-serif;
+    border-radius: 10em;
+    border: none;
+}
+#signup{
+    
 }
 
 #login-nombre{
@@ -192,6 +274,7 @@ input[type="submit"]:hover{
 
 #singup{
     grid-area: btn-registro;
+    padding: 2%;
 }
 
 /* MENSAJES */
