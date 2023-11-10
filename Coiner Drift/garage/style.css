@@ -1,0 +1,99 @@
+body{
+    background-color: #303030;
+    font-family: 'Amaranth', sans-serif;
+    display: flex;
+    background-image: url('img/fondo.png');
+    background-size: cover; /* Para que la imagen se ajuste al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    background-attachment: fixed; /* Para que la imagen permanezca fija al hacer scroll */
+    background-position: center; /* Para centrar la imagen */
+    overflow: hidden;
+}
+.boton {
+    position: absolute;
+    font-family: 'Amaranth', sans-serif;
+    letter-spacing: 4px;
+    top: 20px; /* Ajusta la distancia desde la parte superior según tu preferencia */
+    left: 20px; /* Ajusta la distancia desde la izquierda según tu preferencia */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #505050; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de enlace */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #303030; /* Cambio de color al pasar el cursor */
+    border: solid #f38032 3px;
+    transition: 0.3s;
+}
+.left{
+    position: absolute;
+    background-color: #f38032;
+    width: 30%;
+    height: 110%;
+    margin: 0%;
+    padding: 0%;
+    left: 0%;
+    top: 0%;
+    display: block;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 20% 100%, 0% 100%);
+}
+.left div{
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0% 2%;
+    font-size: 30px;
+}
+.left i{
+    
+    font-size: 30px;
+}
+.left p{
+    color: #fff;
+    margin: 0% 2%;
+    font-size: 30px;
+
+}
+.middle{
+    position: absolute;
+    width:50%;
+    height: auto;
+    left: 20%;
+    top: 20%;
+
+}
+.collection{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    overflow: scroll;
+    left: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Dos columnas de ancho igual */
+    grid-template-rows: 25% 25%;
+}
+.object{
+    width: 80%;
+    padding: 6%;
+    margin: 2%;
+    background-color: #505050;
+    border: none;
+    border-radius: 20px;
+}
+.object img{
+    width: 100%;
+    height: 100%;
+}
+object button:hover{
+    background-color: #303030;
+    border: #f38032 solid 2px;
+}

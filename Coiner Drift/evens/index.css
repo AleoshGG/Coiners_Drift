@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/fondo.png);
+    background-size: cover; /* Para que la imagen se ajuste al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    background-attachment: fixed; /* Para que la imagen permanezca fija al hacer scroll */
+    background-position: center; 
+    padding: 20px; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+.boton {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 4px;
+    top: 20px; /* Ajusta la distancia desde la parte superior según tu preferencia */
+    left: 20px; /* Ajusta la distancia desde la izquierda según tu preferencia */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9100; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de enlace */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #ff9100b3; /* Cambio de color al pasar el cursor */
+}
+.container {
+    text-align: center;
+    margin-top: 30px; /* Espacio superior ajustable */
+}
+
+.gaming-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    color: #ffbb00; /* Color de texto */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px #000;
+    /* Ajusta cualquier otro estilo que desees aquí */
+}
+.container-carousel {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+
+.carruseles {
+    width: 500%;
+    height: 100%;
+    display: flex;
+   /* En esta sección dependiendo las imágenes sera el porcentaje, cada imagen vale 100% si son 10 imágenes seria 10000% */
+}
+
+.slider-section {
+    width: calc(100% / 5); /*Aquí se divide por la cantidad de imágenes que haya*/
+    height: 100%;
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .10s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}

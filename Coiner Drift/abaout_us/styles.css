@@ -1,0 +1,47 @@
+*{
+    font-family: 'Amaranth', sans-serif;
+}
+.diag{
+    position: absolute;
+    background-color: #f38032;
+    width: 70%;
+    height: 110%;
+    margin: 0%;
+    padding: 0%;
+    left: 0%;
+    top: 0%;
+    display: block;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 25% 100%, 0% 100%);
+}
+.diag i{
+    color: white;
+    font-size: 50px;
+    padding: 2%;
+}
+h1{
+    position: absolute;
+    top: 22%;
+    left: 32%;
+}
+.tarjeta{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    background-color: #303030;
+    width: 60%;
+    height: 80%;
+    padding: 8%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    overflow: scroll;
+    word-spacing: 5px;
+}
+.tarjeta i{
+    font-size: 100px;
+    text-align: center;
+
+}

@@ -1,0 +1,183 @@
+body{
+    font-family: 'Amaranth', sans-serif;
+    display: flex;
+    background-image: url('img/fondo.png');
+    background-size: cover; /* Para que la imagen se ajuste al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    background-attachment: fixed; /* Para que la imagen permanezca fija al hacer scroll */
+    background-position: center; /* Para centrar la imagen */
+}
+
+.left{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    left: 0%;
+    top: 0%;
+    display: block;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+}
+.top{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 1% 0%;
+    width: 100%;
+    left: 0%;
+    height: 10%;
+}
+.top button{
+    display: flex;
+    background-color: #505050;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border: none;
+    box-sizing: border-box;
+    font-size: medium;
+    color: #fff;
+    border-right: solid #303030;
+}
+.top button:hover{
+    background-color: #303030;
+    border: solid 3px #F38032;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.top i{
+    font-size: larger;
+    padding: 4% 0%;
+    text-align: center;
+}
+.top p {
+    width: auto;
+    padding: 4% 6%;
+    margin: 0%;
+    text-align: center;
+}
+.bipart{
+    position: relative;
+    display: flex;
+    padding: 0%;
+    margin: 0.5% 0%;      
+    width: 85%;
+    left: 0%;
+    height: 15%;
+    box-sizing: border-box;
+}
+.bipart button{
+    
+    justify-content: center;
+    align-items: center;
+    padding: 1% 10%;
+    margin: 1% 10%;
+    height: 100%;
+    width: 40%;
+    color: #fff;
+    border: none;
+    border-right: olid;
+    box-sizing: border-box;
+}
+.bipart button:hover{
+    background-color: #303030;
+    border: solid 3px #F38032;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.bipart i{
+    font-size: xx-large;
+    padding: 4% 0%;
+    text-align: center;
+}
+.bipart p {
+    width: auto;
+    padding: 4% 4%;
+    margin: 0%;
+    text-align: center;
+    font-size: x-large;
+}
+.btmLeft button{
+    background-color: #505050;
+    width: 100%;
+    margin: 1% 0%;
+    padding: 1% 10%;
+    color: #fff;
+    display: flex;
+    box-sizing: border-box;
+}
+.btmLeft button:hover{
+    background-color: #303030;
+    border: solid 3px #F38032;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.btmLeft i{
+    font-size: xx-large;
+    padding: 4% 0%;
+    text-align: center;
+}
+.btmLeft p{
+    width: auto;
+    padding: 4% 6%;
+    margin: 0%;
+    text-align: center;
+    font-size: x-large;
+}
+.btmLeft li{
+    display: flex;
+    list-style: none;
+    left: 0%;
+}
+
+
+
+
+
+
+.right {
+    position: absolute;
+    transform: rotate(0);
+    top: 60%;
+    left: 80%;
+    z-index: 99;
+    width: 20%;
+    height: 40%;
+    background-color: #505050;
+    clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 100% 100%);
+    overflow: hidden;
+}
+.right-button {
+    font-size: 40px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    line-height: 200px; /* Ajusta esto a la altura para centrar verticalmente */
+    text-align: center;
+    position: absolute;
+    top: 50%; /* Centra verticalmente el botón */
+    left: 65%; /* Centra horizontalmente el botón */
+    transform: translate(-50%, -50%) rotate(-45deg); /* Centra el botón y rota en 45 grados */
+    transition: transform 0.3s;
+}
+
+
+.right button{
+    width: 100%;
+    height: 100%;
+    font-size: 500%;
+    font-family: 'Permanent Marker', cursive;
+    text-align: end;
+    color: #fff;
+    background-color: #505050;
+}
+.right button:hover{
+    background-color: #303030;
+    border: solid 3px #F38032;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
